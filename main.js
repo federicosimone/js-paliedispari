@@ -9,13 +9,25 @@
 
 
 //input
-
+//scelta utente 
 let scommessaUtente = prompt('Pari o dispari?');
 console.log(`L'utente ha scelto ${scommessaUtente}`);
 
  if (scommessaUtente != "pari" && scommessaUtente != "dispari") {
-    alert("Errore! Scegli pari o dispari") ;
+    alert("Errore! Scegli pari o dispari") ; 
+    scommessaUtente = "pari" ;
+    console.log("Nuova scelta automatica: ", scommessaUtente) ;
  }
+//scelta computer
 
+let scommessaComputer = null 
+
+if (scommessaUtente = "pari") {
+    scommessaComputer = "dispari" ;
+} else if (scommessaUtente = "dispari") {
+    scommessaComputer = "pari" ;
+}
+
+console.log('La scelta del computer è:',scommessaComputer);
 //elaborazione
 //Output
