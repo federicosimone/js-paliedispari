@@ -22,9 +22,9 @@ console.log(`L'utente ha scelto ${scommessaUtente}`);
 
 let scommessaComputer = null 
 
-if (scommessaUtente = "pari") {
+if (scommessaUtente == "pari") {
     scommessaComputer = "dispari" ;
-} else if (scommessaUtente = "dispari") {
+} else {
     scommessaComputer = "pari" ;
 }
 
