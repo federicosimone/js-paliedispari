@@ -61,4 +61,6 @@ console.log("Il computer ha scelto ",NumeroComputer) ;
 
 const somma = numeroUtente + NumeroComputer ;
 console.log("La somma dei due numeri è" ,somma) ;
+
+
 //Output
