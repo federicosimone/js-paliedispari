@@ -4,7 +4,7 @@
 //l'utente può scegliere un numero da 1 a 5 
 //il computer genera un numero random usando una funzione
 //fai la somma dei due numeri
-//la somma dei due numeri restituisce un numero pari o dispari? 
+//la somma dei due numeri restituisce un numero pari o dispari?  usando funzione
 //dichiarare vincitore 
 
 
@@ -44,7 +44,6 @@ console.log("L'utente ha scelto il numero" ,numeroUtente  ) ;
 // numero computer 
 
 
-
 function NumeroRandom(min, max) {
     let risultato = Math.floor(Math.random() * (max - min + 1) + min) ;
     return risultato;
@@ -52,11 +51,14 @@ function NumeroRandom(min, max) {
 
 const min = parseInt(1) ;
 const max = parseInt(5) ;
-let NumeroComputer = NumeroRandom() ;
 
-alert(NumeroComputer) ;
+let NumeroComputer = NumeroRandom(min, max) ;
+console.log("Il computer ha scelto ",NumeroComputer) ;
 
 
 
 //elaborazione
+
+const somma = numeroUtente + NumeroComputer ;
+console.log("La somma dei due numeri è" ,somma) ;
 //Output
