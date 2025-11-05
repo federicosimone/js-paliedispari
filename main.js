@@ -29,5 +29,26 @@ if (scommessaUtente = "pari") {
 }
 
 console.log('La scelta del computer è:',scommessaComputer);
+
+// numero utente 
+
+let numeroUtente = parseInt(prompt('Scegli un numero tra 1 e 5')) ;
+
+if (numeroUtente > 5 ) {
+    alert("Il numero non è valido, ho scelto 4 per te")    
+    numeroUtente = parseInt(4) ;
+}
+
+console.log("L'utente ha scelto il numero" ,numeroUtente  ) ;
+
+// numero computer 
+
+function NumeroRandom(min, max) {
+    const risultato = Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+return risultato ; 
+
+
 //elaborazione
 //Output
