@@ -59,8 +59,23 @@ console.log("Il computer ha scelto ",NumeroComputer) ;
 
 //elaborazione
 
-const somma = numeroUtente + NumeroComputer ;
+let somma = numeroUtente + NumeroComputer ;
 console.log("La somma dei due numeri è" ,somma) ;
+
+function pariOrDispari(somma) {
+    
+    let risultato = null ;
+    if (somma % 2 == 0) {
+        risultato = "la somma è PARI"
+    } else {
+        risultato = "La somma è DISPARI"
+    }
+
+    return risultato ;
+    
+}
+
+console.log(pariOrDispari(somma)) ;
 
 
 //Output
