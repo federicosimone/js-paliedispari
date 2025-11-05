@@ -43,11 +43,19 @@ console.log("L'utente ha scelto il numero" ,numeroUtente  ) ;
 
 // numero computer 
 
+
+
 function NumeroRandom(min, max) {
-    const risultato = Math.floor(Math.random() * (max - min + 1) + min)
+    let risultato = Math.floor(Math.random() * (max - min + 1) + min) ;
+    return risultato;
 }
 
-return risultato ; 
+const min = parseInt(1) ;
+const max = parseInt(5) ;
+let NumeroComputer = NumeroRandom() ;
+
+alert(NumeroComputer) ;
+
 
 
 //elaborazione
