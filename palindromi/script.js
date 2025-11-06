@@ -8,13 +8,17 @@
 
 let parolaInserita = prompt("Scrivi una parola") ;
 console.log(`la parola inserita è ${parolaInserita}`)
+let risultato = Palindromo(parolaInserita) ;
 
-function Palindromo(parolaInserita) { 
-    let parolaScomposta = Array.from(parolaInserita) ;
-    let arrayInverso = parolaScomposta.reverse ;
-    let stringAgain = arrayInverso ;
+function Palindromo(stringa) { 
+    let parolaScomposta = stringa.split("") ;
+    //console.log(parolaInserita)
+    let arrayInverso = parolaScomposta.reverse() ;
+    //console.log(arrayInverso)
+    let stringAgain = arrayInverso.join("") ;
+    //console.log(stringAgain)
 
-    if (stringAgain == parolaInserita) {
+    if (parolaInserita == stringAgain) {
         alert("WOW! E' un palindromo!");
     } else {
         alert("Non è un palindromo, RIPROVA...") ;
@@ -23,4 +27,4 @@ function Palindromo(parolaInserita) {
     return stringAgain ;
 }
 
-console.log(Palindromo(parolaInserita)) ;
+console.log(risultato) ;
