@@ -66,9 +66,9 @@ function pariOrDispari(somma) {
     
     let risultato = null ;
     if (somma % 2 == 0) {
-        risultato = "pari"
+        risultato = "pari";
     } else {
-        risultato = "dispari"
+        risultato = "dispari" ;
     }
 
     return risultato ;
@@ -80,11 +80,11 @@ console.log(pariOrDispari(somma)) ;
 
 //Output
 
-alert(`La somma è ${somma} ed il numero è ${pariOrDispari(somma)}`)
-alert(`La puntata iniziale dell'utente era ${scommessaUtente}`)
+alert(`La somma è ${somma} ed il numero è ${pariOrDispari(somma)}`) ;
+alert(`La puntata iniziale dell'utente era ${scommessaUtente}`);
 
 if (pariOrDispari(somma) == scommessaUtente) {
-    alert("Utente ha VINTO!")
+    alert("Utente ha VINTO!");
 } else {
-    alert("Computer ha VINTO!")
+    alert("Computer ha VINTO!");
 }
